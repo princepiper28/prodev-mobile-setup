@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# ProDev Mobile App 0x00
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is my first ProDev mobile app project, built using [Expo Router](https://expo.dev/router).
 
-## Get started
+---
 
-1. Install dependencies
+## Steps I Followed for Scaffolding
 
+1. Navigated to my parent project directory:
    ```bash
-   npm install
-   ```
+   cd prodev-mobile-setup
+Initialized the project using the latest Expo Router template:
+npx create-expo-app@latest app-example
 
-2. Start the app
+Opened the file:
+app-example/app/(tabs)/index.tsx
+and replaced the default Welcome! text with:
+<ThemedText type="title">First App Created</ThemedText>
+✅ Now the Home screen shows First App Created.
 
-   ```bash
-   npx expo start
-   ```
+Started the development server:
+npx expo start
+On iOS → scanned the QR code with the Camera app.
 
-In the output, you'll find options to open the app in a
+On Android → scanned the QR code with the Expo Go app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
+Resetting the Project
+I ran:
 npm run reset-project
-```
+Observations:
+The starter code was moved into a new directory called app-example.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+A fresh empty app/ directory was created, ready for development.
 
-## Learn more
+The original home screen was removed, and the project was essentially reset to a clean state.
 
-To learn more about developing your project with Expo, look at the following resources:
+Notes
+The project uses file-based routing (Expo Router).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Screens inside app/(tabs) only show when rendered in a Tab navigator.
 
-## Join the community
+The constants/Colors.tsx file defines light and dark mode theme colors.
 
-Join our community of developers creating universal apps.
+Running the App
+Install dependencies:
+cd app-example
+npm install
+Start the Expo dev server:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npx expo start
+Learn More
+Expo Docs
+
+Expo Router Intro

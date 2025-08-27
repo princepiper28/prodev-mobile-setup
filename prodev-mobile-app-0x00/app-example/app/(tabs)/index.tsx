@@ -1,9 +1,13 @@
-import { Text, View, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+import { ThemedText } from "@/components/ThemedText";
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>First App Created</Text>
+      <ThemedText type="title">First App Created</ThemedText>
+      <ThemedText>
+        Welcome to your first ProDev mobile app 🚀
+      </ThemedText>
     </View>
   );
 }
@@ -13,9 +17,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: "bold",
   },
 });
